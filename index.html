@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center but-row">
+            <div class="col"></div>
+            <div class="col-2 align-self-center but-col">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#popup">Налоговый вычет</button>
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+
+        <div id="popup" class="modal fade popup" tabindex="-1" aria-labelledby="popup-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                      
+                    <h5 class="modal-title bolder" id="popup-title">Налоговый вычет</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                    
+                  </div>
+                  <div class="modal-body">
+
+                          <div class="row">
+                              <div class="col">
+                                <p class="caption">
+                                    Используйте налоговый вычет чтобы погасить ипотеку досрочно. 
+                                    Размер налогового вычета составляетне более 13% от своего официального годового дохода.
+                                </p>
+                              </div>
+                          </div>
+                          <div class="row monthly">
+                              <div class="col">
+                                  <b>Ваша зарплата в месяц</b>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                <input class="form-control" type="text" placeholder="Введите данные" id="salary">
+                              </div>
+                          </div>
+                          <div class="row counting">
+                              <div class="col">
+                                  <a class="link-css bold" href="#" onclick="calculate()">Рассчитать</a>
+                                </div>
+                          </div>
+                          <div id="calculate-result">
+                            
+                          </div>
+                          <div class="row payment-time">
+                              <div class="col-4">
+                                <p class="bold">Что уменьшаем?</p>
+                              </div>
+                              <div class="col offset-3">
+                                <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                                <label class="btn btn-secondary" for="option1" id="payment">Платеж</label>
+                              </div>
+                              <div class="col">
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" disabled>
+                                <label class="btn btn-secondary" for="option2" id="time">Срок</label>
+                                
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col center">
+                              <button type="button" class="btn btn-danger add" data-bs-toggle="modal" data-bs-target="#popup-2">Добавить</button>
+                            </div>
+                          </div>
+
+          
+                  </div>
+
+
+                </div>
+              </div>
+        </div>
+
+
+
+
+          <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
