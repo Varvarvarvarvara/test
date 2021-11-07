@@ -14,9 +14,9 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row align-items-center but-row">
+        <div class="row but-row">
             <div class="col"></div>
-            <div class="col-2 align-self-center but-col">
+            <div class=" col-8 col-lg-4 col-md-6 align-self-center but-col">
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#popup">Налоговый вычет</button>
             </div>
             <div class="col"></div>
@@ -25,7 +25,7 @@
 
 
         <div id="popup" class="modal fade popup" tabindex="-1" aria-labelledby="popup-title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                 <div class="modal-content">
                   <div class="modal-header">
 
@@ -58,27 +58,26 @@
                           </div>
                           <div class="row counting">
                               <div class="col">
-                                  <a class="link-css bold" href="#" onclick="calculate()">Рассчитать</a>
+                                  <a class="link-css bolder" href="#" onclick="calculate()">Рассчитать</a>
                                 </div>
                           </div>
                           <div id="calculate-result">
                             
                           </div>
                           <div class="row payment-time">
-                              <div class="col-4">
+                              <div class="col-12 col-sm-4">
                                 <p class="bold">Что уменьшаем?</p>
                               </div>
-                              <div class="col offset-3">
+                              <div class="col-4 col-sm-3 px-sm-0 center offset-sm-3">
                                 <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
                                 <label class="btn btn-secondary" for="option1" id="payment">Платеж</label>
                               </div>
-                              <div class="col">
+                              <div class="col-4 col-sm-2 px-sm-0 center">
                                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" disabled>
                                 <label class="btn btn-secondary" for="option2" id="time">Срок</label>
-                                
                               </div>
                           </div>
-                          <div class="row">
+                          <div class="row mt-sm-5 add">
                             <div class="col center">
                               <button type="button" class="btn btn-danger add" data-bs-toggle="modal" data-bs-target="#popup-2">Добавить</button>
                             </div>
